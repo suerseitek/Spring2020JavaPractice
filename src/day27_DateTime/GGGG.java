@@ -13,7 +13,7 @@ public class GGGG {
 
     public static void main(String[] args) {
         LocalDate birthday =LocalDate.of(1994,05,10);
-        DateTimeFormatter d = DateTimeFormatter.ofPattern("MMM dd EEEE yyyy");
+        DateTimeFormatter d = DateTimeFormatter.ofPattern("MMM dd EEE yyyy");
         System.out.println(birthday.format(d));
 
     }
