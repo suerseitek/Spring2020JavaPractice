@@ -54,6 +54,18 @@ public class Library {
         return count;
     }
 
+    public static int Frequency(String str, char ch) {
+
+        char [] arr = str.toCharArray();
+        int count = 0;
+        for(char each: arr){
+            if(each == ch){
+                count++;
+            }
+        }
+        return count ;
+    }
+
     public static String FrequencyOfChars(String str){
         String NonDup =  RemoveDuplicates(str)  ;             //ABC
         String result = ""; //coantisn the frequency of chars
