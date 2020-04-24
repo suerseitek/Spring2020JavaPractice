@@ -8,7 +8,7 @@ public class Time_Formatting {
     public static void main(String[] args) {
 
         LocalTime time  = LocalTime.of(16,30);
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("hh a: mm");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("hh : mm a");
         System.out.println(time.format(dtf));
     }
 
