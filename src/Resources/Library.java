@@ -1,5 +1,6 @@
 package Resources;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Library {
@@ -77,6 +78,18 @@ public class Library {
         return result;
     }
 
+    public static int max(ArrayList<Integer> list){  // returns the mxmum number from arraylist
+        int maximum = Integer.MIN_VALUE;
+        for(int i = 0; i < list.size(); i++){
+
+            if(list.get(i) > maximum ){
+                maximum = list.get(i);
+            }
+
+        }
+
+        return maximum;
+    }
 
 
 }
