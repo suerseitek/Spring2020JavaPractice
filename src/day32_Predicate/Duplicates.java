@@ -2,6 +2,7 @@ package day32_Predicate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Duplicates {
 
@@ -20,6 +21,7 @@ write a program that can return the duplicated values from an ArrayList of Strin
 
         ArrayList<String> list = new ArrayList<>();
         list.addAll(Arrays.asList("A", "B", "A", "C", "D", "D", "B"));
+        System.out.println(list);
 
         ArrayList<String> sss = new ArrayList<>();
 
@@ -42,9 +44,15 @@ write a program that can return the duplicated values from an ArrayList of Strin
 
         }
         System.out.println(sss);
+        System.out.println("============================================================");
 
 
-
+        ArrayList<String> result = new ArrayList<>();
+        for(String each: list){
+            int count = Collections.frequency(list,each);
+            if(count >1 && !result.contains(each)){result.add(each);}
+        }
+        System.out.println(result);
     }
 
 
