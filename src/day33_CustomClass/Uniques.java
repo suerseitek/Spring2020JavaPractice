@@ -50,7 +50,7 @@ public class Uniques {
 
         list1.addAll(Arrays.asList(1,1,2,3,4,5,5));
 
-        list1.removeIf(x ->Collections.frequency(list1, x) <= 1);
+        list1.removeIf(x ->Collections.frequency(list1, x) == 1);
 
         System.out.println(list1);
 
