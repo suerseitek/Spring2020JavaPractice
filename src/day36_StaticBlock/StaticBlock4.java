@@ -1,5 +1,5 @@
 package day36_StaticBlock;
-import day34_CustomClass.Tester;d
+import day34_CustomClass.Tester;
 public class StaticBlock4 {
 
     static String name = "Cybertek School";
