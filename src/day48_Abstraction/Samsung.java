@@ -12,6 +12,10 @@ public class Samsung extends Phone {
         System.out.println("Texting from samsung to "+ phonenumber);
     }
 
+    public void freezing(){
+        System.out.println("samsung is  freezing");
+    }
+
     public Samsung(String model, double price, String size){
         brand = "Samsung";
         this.model = model;

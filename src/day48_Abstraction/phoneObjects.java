@@ -12,6 +12,13 @@ public class phoneObjects {
 
         obj1.FaceTiming(342132135);
 
+        System.out.println("=========================================================");
+
+        Samsung obj2 = new Samsung("Galaxy s10", 900,"10 inches");
+
+        System.out.println(obj2);
+        obj2.freezing();
+        obj2.calling(231231232);
 
 
 
