@@ -22,4 +22,6 @@ public class Samsung extends Phone {
         this.price = price;
         this.size = size;
     }
+
+
 }
